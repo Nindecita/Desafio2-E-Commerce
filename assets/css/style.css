@@ -1,0 +1,90 @@
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #a7907f;
+  margin: 0;
+  padding: 0;
+}
+
+
+.header {
+  grid-area: header;
+  background-color: #d28f18;
+  color: #ffff;
+  height: 5vh;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  
+}
+
+.logo {
+  padding-left: 3rem;
+}
+
+.icons {
+  padding-right: 4rem;
+}
+.sidebar {
+  grid-area: sidebar;
+  height: 90vh;
+  width: 20vw;
+  background-color: #a7907f;
+  color: black;
+  
+}
+
+.sidebar ul {
+  padding-top: 20px;
+  list-style: none;
+}
+
+.main-content {
+  grid-area: main-content;
+  height: 90vh;
+  width: 80vw;
+}
+
+.footer {
+  grid-area: footer;
+  text-align: center;
+  background-color: #d28f18;
+  color: white;
+  height: 5vh;
+  width: 100vw;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  padding-top: 20px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 20rem;
+  border: solid 3px #6d6868;
+  border-radius: 3px;
+  background-color:#c5bbbb;
+}
+
+.item img {
+  width: 90%;
+  height: auto;
+  padding-top: 1rem;
+}
+
+.bg-btn {
+  background-color: #d28f18;
+  margin-bottom: 1rem;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "sidebar main-content"
+    "footer footer";
+}
