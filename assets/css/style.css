@@ -5,16 +5,13 @@ body {
   padding: 0;
 }
 
-
 .header {
   grid-area: header;
   background-color: #d28f18;
   color: #ffff;
   height: 5vh;
-  width: 100vw;
   display: flex;
   justify-content: space-between;
-  
 }
 
 .logo {
@@ -27,10 +24,8 @@ body {
 .sidebar {
   grid-area: sidebar;
   height: 90vh;
-  width: 20vw;
   background-color: #a7907f;
   color: black;
-  
 }
 
 .sidebar ul {
@@ -40,8 +35,6 @@ body {
 
 .main-content {
   grid-area: main-content;
-  height: 90vh;
-  width: 80vw;
 }
 
 .footer {
@@ -50,7 +43,6 @@ body {
   background-color: #d28f18;
   color: white;
   height: 5vh;
-  width: 100vw;
 }
 
 .product-grid {
@@ -67,7 +59,7 @@ body {
   width: 20rem;
   border: solid 3px #6d6868;
   border-radius: 3px;
-  background-color:#c5bbbb;
+  background-color: #c5bbbb;
 }
 
 .item img {
@@ -87,4 +79,5 @@ body {
     "header header"
     "sidebar main-content"
     "footer footer";
+  grid-template-columns: 20vw 1fr;
 }
